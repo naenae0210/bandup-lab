@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- BandUp Lab 화면 디자인 (정적 참고용). 실제 구현은 React 컴포넌트로 다시 만든다. -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F4FD8}a:hover{color:#1F3AA8}
+</style>
+<title>크롬 확장 · 가져오기 버튼</title>
+</head>
+<body>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; background: #DDE1E7; padding: 24px; font-family: 'Noto Sans KR', system-ui, sans-serif; color: #15171C">
+<div style="width: 100%; height: 100%; border-radius: 14px; overflow: hidden; background: #FFFFFF; box-shadow: 0 12px 40px rgba(21, 23, 28, 0.16); display: flex; flex-direction: column; position: relative">
+
+<div style="height: 52px; flex: 0 0 52px; display: flex; align-items: center; gap: 12px; padding: 0 16px; background: #F1F3F6; border-bottom: 1px solid #E2E5EA">
+<div aria-hidden="true" style="display: flex; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #E46A5E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #E8B54A"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #5DBB63"></span></div>
+<div style="flex: 1; height: 32px; display: flex; align-items: center; padding: 0 14px; border-radius: 8px; background: #FFFFFF; border: 1px solid #E2E5EA; font-size: 13px; color: #4A505C">모의 사이트 (예시) · Reading 모듈 1</div>
+<button type="button" aria-label="BandUp Lab 확장" style="width: 36px; height: 36px; border-radius: 8px; border: 2px solid #2F4FD8; background: #FFFFFF; color: #2F4FD8; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">B</button>
+</div>
+
+<div style="flex: 1; display: flex; gap: 40px; padding: 40px 48px; background: #FFFFFF">
+<div aria-hidden="true" style="flex: 1 1 0; display: flex; flex-direction: column; gap: 14px; padding-right: 40px; border-right: 1px solid #EEF0F3">
+<div style="width: 45%; height: 16px; border-radius: 4px; background: #D7DBE2"></div>
+<div style="height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="width: 94%; height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="width: 70%; height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="height: 6px"></div>
+<div style="height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="width: 88%; height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="width: 82%; height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+<div style="width: 56%; height: 11px; border-radius: 4px; background: #ECEEF1"></div>
+</div>
+<div aria-hidden="true" style="flex: 1 1 0; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 30%; height: 12px; border-radius: 4px; background: #D7DBE2"></div>
+<div style="width: 85%; height: 12px; border-radius: 4px; background: #E4E7EC"></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #C5CAD3"></div><div style="flex: 1; height: 11px; border-radius: 4px; background: #ECEEF1"></div></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="width: 18px; height: 18px; border-radius: 50%; border: 6px solid #6B7486; box-sizing: border-box"></div><div style="flex: 1; height: 11px; border-radius: 4px; background: #ECEEF1"></div></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #C5CAD3"></div><div style="flex: 1; height: 11px; border-radius: 4px; background: #ECEEF1"></div></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #C5CAD3"></div><div style="flex: 1; height: 11px; border-radius: 4px; background: #ECEEF1"></div></div>
+</div>
+</div>
+
+<section aria-labelledby="ext-title" style="position: absolute; right: 24px; bottom: 24px; width: 320px; box-sizing: border-box; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E2E5EA; box-shadow: 0 16px 40px rgba(21, 23, 28, 0.18); display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 8px; background: #2F4FD8; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px">B</div>
+<h2 id="ext-title" style="margin: 0; flex: 1; font-size: 15px; font-weight: 700">BandUp Lab</h2>
+<button type="button" aria-label="닫기" style="width: 32px; height: 32px; border-radius: 8px; border: none; background: transparent; color: #5F6673; cursor: pointer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6 6 18"></path></svg></button>
+</div>
+<div style="padding: 10px 12px; border-radius: 10px; background: #F4F5F7; font-size: 13px; font-weight: 600">Reading · Academic Passage 감지됨</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: #2E333B">
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F7A4D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>지문 텍스트</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F7A4D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>문항·선지 5개</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F7A4D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>내가 고른 답 5개</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F7A4D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>화면 스크린샷</li>
+</ul>
+<button type="button" style="min-height: 48px; border-radius: 10px; border: none; background: #2F4FD8; font: inherit; font-size: 15px; font-weight: 600; color: #FFFFFF; cursor: pointer">이 화면 가져오기</button>
+<p style="margin: 0; font-size: 12px; color: #5F6673; line-height: 1.6">내 컴퓨터의 BandUp Lab으로만 보낸다. 채점 화면에서 한 번 더 누르면 정답도 채워진다.</p>
+</section>
+
+</div>
+</div>
+</body>
+</html>

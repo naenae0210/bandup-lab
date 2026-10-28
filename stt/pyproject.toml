@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "banduplab-stt"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[project.scripts]
+banduplab-stt = "banduplab_stt.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/banduplab_stt"]

@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- BandUp Lab 화면 디자인 (정적 참고용). 실제 구현은 React 컴포넌트로 다시 만든다. -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F5F7}
+a{color:#2F4FD8}a:hover{color:#1F3AA8}
+</style>
+<title>홈 · 오늘의 학습</title>
+</head>
+<body>
+<div style="min-height: 960px; display: flex; flex-wrap: wrap; background: #F4F5F7; font-family: 'Noto Sans KR', system-ui, sans-serif; color: #15171C; font-variant-numeric: tabular-nums">
+
+<nav aria-label="주 메뉴" style="flex: 1 1 220px; box-sizing: border-box; padding: 24px 16px; background: #FFFFFF; border-right: 1px solid #E2E5EA; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 10px; padding: 0 12px 24px">
+<div style="width: 32px; height: 32px; border-radius: 9px; background: #2F4FD8; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px">B</div>
+<div style="font-weight: 700; font-size: 16px">BandUp Lab</div>
+</div>
+<a href="home.html" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 10px; text-decoration: none; background: #E9EDFC; color: #2F4FD8; font-weight: 600; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>홈</a>
+<a href="reading.html" style="display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #4A505C; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4z"></path><path d="M20 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"></path></svg>리딩·리스닝</a>
+<a href="writing.html" style="display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #4A505C; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M14 6l4 4"></path></svg>라이팅</a>
+<a href="speaking.html" style="display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #4A505C; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg>스피킹</a>
+<a href="records.html" style="display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #4A505C; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-7"></path><path d="M3 20h18"></path></svg>기록</a>
+<a href="settings.html" style="display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #4A505C; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10"></path><path d="M18 6h2"></path><circle cx="16" cy="6" r="2"></circle><path d="M4 12h2"></path><path d="M10 12h10"></path><circle cx="8" cy="12" r="2"></circle><path d="M4 18h12"></path><circle cx="18" cy="18" r="2"></circle></svg>설정</a>
+<div style="margin-top: auto; padding: 16px 12px; border-radius: 12px; background: #F4F5F7; font-size: 13px; color: #4A505C; line-height: 1.6">
+<div style="font-weight: 600; color: #15171C">AI 연동</div>
+<div>API 연결됨 · Claude</div>
+</div>
+</nav>
+
+<main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 32px 40px 48px; display: flex; flex-direction: column; gap: 24px">
+
+<header style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div>
+<div style="font-size: 14px; color: #5F6673; font-weight: 500">11월 2주차 · 리딩·라이팅 문법 기초</div>
+<h1 style="margin: 6px 0 0; font-size: 30px; font-weight: 700; letter-spacing: -0.02em">오늘의 학습</h1>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
+<div style="min-height: 44px; display: flex; align-items: center; padding: 0 16px; border-radius: 10px; background: #FFFFFF; border: 1px solid #E2E5EA; font-size: 14px; font-weight: 600">시험까지 D-[시험일 설정]</div>
+<a href="reading.html" style="min-height: 44px; display: flex; align-items: center; padding: 0 20px; border-radius: 10px; background: #2F4FD8; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 600">진단 모의 시작</a>
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<section aria-labelledby="today-title" style="flex: 2 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E5EA; border-radius: 16px; padding: 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px">
+<h2 id="today-title" style="margin: 0; font-size: 18px; font-weight: 700">오늘의 3시간</h2>
+<div style="font-size: 14px; color: #4A505C"><span style="font-weight: 700; color: #15171C">30</span> / 180분 완료</div>
+</div>
+<div style="margin-top: 12px; height: 8px; border-radius: 4px; background: #EEF0F3; overflow: hidden" role="img" aria-label="180분 중 30분 완료">
+<div style="width: 17%; height: 8px; background: #2F4FD8; border-radius: 4px"></div>
+</div>
+<ul style="list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column">
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EEF0F3">
+<input id="t1" type="checkbox" checked style="width: 20px; height: 20px; accent-color: #2F4FD8; margin: 0">
+<div style="width: 56px; font-size: 14px; font-weight: 600; color: #5F6673">30분</div>
+<label for="t1" style="flex: 1 1 240px; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600; color: #5F6673; text-decoration: line-through">어휘</span><span style="display: block; font-size: 13px; color: #5F6673">전날 오답 단어 퀴즈 + 새 단어 30개</span></label>
+<span style="font-size: 13px; color: #1F7A4D; font-weight: 600">완료</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EEF0F3">
+<input id="t2" type="checkbox" style="width: 20px; height: 20px; accent-color: #2F4FD8; margin: 0">
+<div style="width: 56px; font-size: 14px; font-weight: 600; color: #4A505C">40분</div>
+<label for="t2" style="flex: 1 1 240px; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">리딩</span><span style="display: block; font-size: 13px; color: #5F6673">학술 지문 1개 + Complete the Words 1세트</span></label>
+<a href="reading.html" style="min-height: 44px; display: flex; align-items: center; padding: 0 16px; border-radius: 10px; border: 1px solid #D5D9E0; color: #15171C; text-decoration: none; font-size: 14px; font-weight: 600">시작</a>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EEF0F3">
+<input id="t3" type="checkbox" style="width: 20px; height: 20px; accent-color: #2F4FD8; margin: 0">
+<div style="width: 56px; font-size: 14px; font-weight: 600; color: #4A505C">40분</div>
+<label for="t3" style="flex: 1 1 240px; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">리스닝</span><span style="display: block; font-size: 13px; color: #5F6673">강의·대화 2개 + 받아쓰기 10분</span></label>
+<a href="reading.html" style="min-height: 44px; display: flex; align-items: center; padding: 0 16px; border-radius: 10px; border: 1px solid #D5D9E0; color: #15171C; text-decoration: none; font-size: 14px; font-weight: 600">시작</a>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EEF0F3">
+<input id="t4" type="checkbox" style="width: 20px; height: 20px; accent-color: #2F4FD8; margin: 0">
+<div style="width: 56px; font-size: 14px; font-weight: 600; color: #4A505C">35분</div>
+<label for="t4" style="flex: 1 1 240px; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">스피킹</span><span style="display: block; font-size: 13px; color: #5F6673">Listen and Repeat 20문장 + 인터뷰 3문항 녹음</span></label>
+<a href="speaking.html" style="min-height: 44px; display: flex; align-items: center; padding: 0 16px; border-radius: 10px; border: 1px solid #D5D9E0; color: #15171C; text-decoration: none; font-size: 14px; font-weight: 600">시작</a>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 0 0">
+<input id="t5" type="checkbox" style="width: 20px; height: 20px; accent-color: #2F4FD8; margin: 0">
+<div style="width: 56px; font-size: 14px; font-weight: 600; color: #4A505C">35분</div>
+<label for="t5" style="flex: 1 1 240px; min-width: 0"><span style="display: block; font-size: 15px; font-weight: 600">라이팅</span><span style="display: block; font-size: 13px; color: #5F6673">Build a Sentence 10문제 + Email 또는 Discussion 1편</span></label>
+<a href="writing.html" style="min-height: 44px; display: flex; align-items: center; padding: 0 16px; border-radius: 10px; border: 1px solid #D5D9E0; color: #15171C; text-decoration: none; font-size: 14px; font-weight: 600">시작</a>
+</li>
+</ul>
+</section>
+
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<section aria-labelledby="band-title" style="background: #FFFFFF; border: 1px solid #E2E5EA; border-radius: 16px; padding: 24px">
+<h2 id="band-title" style="margin: 0; font-size: 18px; font-weight: 700">영역별 밴드</h2>
+<div style="margin-top: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<div style="padding: 14px; border-radius: 12px; background: #F4F5F7"><div style="font-size: 13px; color: #5F6673">리딩</div><div style="font-size: 24px; font-weight: 700; color: #5F6673">–</div></div>
+<div style="padding: 14px; border-radius: 12px; background: #F4F5F7"><div style="font-size: 13px; color: #5F6673">리스닝</div><div style="font-size: 24px; font-weight: 700; color: #5F6673">–</div></div>
+<div style="padding: 14px; border-radius: 12px; background: #F4F5F7"><div style="font-size: 13px; color: #5F6673">스피킹</div><div style="font-size: 24px; font-weight: 700; color: #5F6673">–</div></div>
+<div style="padding: 14px; border-radius: 12px; background: #F4F5F7"><div style="font-size: 13px; color: #5F6673">라이팅</div><div style="font-size: 24px; font-weight: 700; color: #5F6673">–</div></div>
+</div>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5F6673; line-height: 1.6">1주차 진단 모의를 풀면 여기에 기록되고, 가장 낮은 영역이 주력 영역으로 표시된다.</p>
+</section>
+<section aria-labelledby="quiz-title" style="background: #FFFFFF; border: 1px solid #E2E5EA; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h2 id="quiz-title" style="margin: 0; font-size: 18px; font-weight: 700">오답 단어 퀴즈</h2>
+<p style="margin: 0; font-size: 14px; color: #4A505C; line-height: 1.6">어제 틀린 문제와 첨삭에서 모은 단어로 10문제를 만든다.</p>
+<button type="button" style="min-height: 44px; border-radius: 10px; border: 1px solid #D5D9E0; background: #FFFFFF; font: inherit; font-size: 14px; font-weight: 600; color: #15171C; cursor: pointer">퀴즈 시작</button>
+</section>
+</div>
+</div>
+
+<section aria-labelledby="month-title" style="background: #FFFFFF; border: 1px solid #E2E5EA; border-radius: 16px; padding: 24px">
+<h2 id="month-title" style="margin: 0; font-size: 18px; font-weight: 700">11월 주차별 포커스</h2>
+<div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px">
+<div style="padding: 16px; border-radius: 12px; border: 1px solid #E2E5EA"><div style="font-size: 13px; color: #5F6673">1주차 · 11/2~11/8</div><div style="margin-top: 6px; font-size: 15px; font-weight: 600">진단 + 유형 파악</div><div style="margin-top: 6px; font-size: 13px; color: #4A505C; line-height: 1.5">영역별 밴드 기록, 주력 약점 1개 선정</div></div>
+<div style="padding: 16px; border-radius: 12px; border: 2px solid #2F4FD8; background: #F5F7FE"><div style="font-size: 13px; color: #2F4FD8; font-weight: 600">2주차 · 11/9~11/15 · 이번 주</div><div style="margin-top: 6px; font-size: 15px; font-weight: 600">리딩·라이팅 문법 기초</div><div style="margin-top: 6px; font-size: 13px; color: #4A505C; line-height: 1.5">Complete the Words, Build a Sentence 정답률 80%</div></div>
+<div style="padding: 16px; border-radius: 12px; border: 1px solid #E2E5EA"><div style="font-size: 13px; color: #5F6673">3주차 · 11/16~11/22</div><div style="margin-top: 6px; font-size: 15px; font-weight: 600">리스닝·스피킹 귀와 입 열기</div><div style="margin-top: 6px; font-size: 13px; color: #4A505C; line-height: 1.5">받아쓰기 원인 Top 3, 인터뷰 녹음 15개 누적</div></div>
+<div style="padding: 16px; border-radius: 12px; border: 1px solid #E2E5EA"><div style="font-size: 13px; color: #5F6673">4주차 · 11/23~11/29</div><div style="margin-top: 6px; font-size: 15px; font-weight: 600">템플릿 완성 + 하프 모의</div><div style="margin-top: 6px; font-size: 13px; color: #4A505C; line-height: 1.5">스피킹·이메일·디스커션 템플릿 확정</div></div>
+</div>
+</section>
+
+</main>
+</div>
+</body>
+</html>

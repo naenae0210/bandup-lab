@@ -1,0 +1,11 @@
+.env
+.claude/settings.local.json
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+backend/dist/
+stt/dist/
+node_modules/
+web/dist/
+.DS_Store
