@@ -8,4 +8,5 @@ backend/dist/
 stt/dist/
 node_modules/
 web/dist/
+*.tsbuildinfo
 .DS_Store
